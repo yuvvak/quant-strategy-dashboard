@@ -1,0 +1,32 @@
+{
+  "backtest_start": "2014-01-02",
+  "backtest_end": "2026-09-01",
+  "config": {
+    "lookback_months": 12,
+    "skip_month": true,
+    "top_n": 3
+  },
+  "strategy": {
+    "total_return": 3.8178,
+    "annualized_return": 0.1322,
+    "annualized_vol": 0.1714,
+    "sharpe_ratio": 0.812,
+    "max_drawdown": -0.3278
+  },
+  "benchmark_spy": {
+    "total_return": 4.1403,
+    "annualized_return": 0.138,
+    "annualized_vol": 0.1715,
+    "sharpe_ratio": 0.841,
+    "max_drawdown": -0.3372
+  },
+  "benchmark_equal_weight": {
+    "total_return": 2.8999,
+    "annualized_return": 0.1135,
+    "annualized_vol": 0.1575,
+    "sharpe_ratio": 0.763,
+    "max_drawdown": -0.3634
+  },
+  "generated_at": "2026-09-02T10:52:36.230902+00:00",
+  "selection_note": "Config selected as the best Sharpe ratio among a small, literature-grounded grid (3/6/9/12-month lookback x with/without 1-month skip), not an unconstrained parameter search. Full grid in sensitivity.json for transparency."
+}
