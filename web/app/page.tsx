@@ -55,7 +55,7 @@ export default function Home() {
         <p className="mt-1 text-sm text-gray-600">
           Top {summary.config.top_n} of 11 SPDR sector ETFs by {summary.config.lookback_months}
           -month price momentum{summary.config.skip_month ? " (skipping the most recent month)" : ""},
-          equal-weighted, rebalanced monthly. Backtested {summary.backtest_start} &mdash;{" "}
+          equal-weighted, rebalanced monthly. Backtested {summary.backtest_start} to{" "}
           {summary.backtest_end}.
         </p>
       </header>
@@ -157,7 +157,7 @@ export default function Home() {
         <p>{summary.selection_note}</p>
         <p className="mt-1">
           Backtest does not model transaction costs, slippage, taxes, or dividend timing
-          differences across the {rebalances.length} rebalances &mdash; live implementation would
+          differences across the {rebalances.length} rebalances. Live implementation would
           likely underperform this backtest by some margin. Sector ETF universe: 11 SPDR Select
           Sector SPDRs. Generated {new Date(summary.generated_at).toLocaleString()}.
         </p>
