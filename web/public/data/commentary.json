@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T12:20:51.467638+00:00",
+  "generated_at": "2026-09-19T18:40:26.516506+00:00",
   "text": "Most recent rebalance (2026-09-18): rotated into XLE (Energy), XLK (Technology), XLV (Health Care). Fully invested - every selected sector cleared the cash hurdle. Strategy Sharpe ratio (net of costs, full history): 0.66 vs SPY 0.73.",
   "is_ai_generated": false,
   "note": "Rule-based summary generated deterministically from the latest backtest output, not an LLM call."

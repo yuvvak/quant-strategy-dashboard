@@ -150,6 +150,44 @@ export default function Home() {
       </section>
 
       <section className="mb-8 rounded-xl border border-gray-200 bg-white p-4">
+        <h2 className="mb-1 text-sm font-semibold text-gray-700">Extensions tested</h2>
+        <p className="mb-3 text-xs text-gray-500">
+          Four further techniques were implemented and evaluated through the same walk-forward
+          split as the headline numbers above. None improved Sharpe, so none are applied by
+          default - kept in the code as opt-in parameters rather than deleted, since a
+          documented negative result is still a result.
+        </p>
+        <table className="w-full">
+          <thead>
+            <tr className="border-b border-gray-200 text-left text-xs uppercase tracking-wide text-gray-500">
+              <th className="px-3 py-2">Extension</th>
+              <th className="px-3 py-2 text-right">Full Sharpe</th>
+              <th className="px-3 py-2 text-right">vs baseline</th>
+              <th className="px-3 py-2 text-right">OOS Sharpe</th>
+              <th className="px-3 py-2 text-right">vs baseline</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-100">
+            {summary.extensions_tested.map((ext) => (
+              <tr key={ext.label}>
+                <td className="px-3 py-2 text-sm">{ext.label}</td>
+                <td className="px-3 py-2 text-right text-sm">{ext.full_sharpe.toFixed(2)}</td>
+                <td className={`px-3 py-2 text-right text-sm ${ext.full_sharpe_delta >= 0 ? "text-emerald-600" : "text-red-600"}`}>
+                  {ext.full_sharpe_delta >= 0 ? "+" : ""}
+                  {ext.full_sharpe_delta.toFixed(3)}
+                </td>
+                <td className="px-3 py-2 text-right text-sm">{ext.oos_sharpe.toFixed(2)}</td>
+                <td className={`px-3 py-2 text-right text-sm ${ext.oos_sharpe_delta >= 0 ? "text-emerald-600" : "text-red-600"}`}>
+                  {ext.oos_sharpe_delta >= 0 ? "+" : ""}
+                  {ext.oos_sharpe_delta.toFixed(3)}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+
+      <section className="mb-8 rounded-xl border border-gray-200 bg-white p-4">
         <h2 className="mb-3 text-sm font-semibold text-gray-700">
           Growth of 100, Strategy vs. Benchmarks
         </h2>

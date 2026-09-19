@@ -5,17 +5,20 @@
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.3211
+        "momentum": 0.3211,
+        "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.2653
+        "momentum": 0.2653,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.1952
+        "momentum": 0.1952,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -29,17 +32,20 @@
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.2441
-      },
-      {
-        "ticker": "XLK",
-        "sector": "Technology",
-        "momentum": 0.2169
+        "momentum": 0.2441,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.2134
+        "momentum": 0.2134,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLK",
+        "sector": "Technology",
+        "momentum": 0.2169,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -53,17 +59,20 @@
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.2567
-      },
-      {
-        "ticker": "XLY",
-        "sector": "Consumer Discretionary",
-        "momentum": 0.1807
+        "momentum": 0.2567,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.1622
+        "momentum": 0.1622,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLY",
+        "sector": "Consumer Discretionary",
+        "momentum": 0.1807,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -77,17 +86,20 @@
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.2699
+        "momentum": 0.2699,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.215
+        "momentum": 0.215,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.21
+        "momentum": 0.21,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -101,17 +113,20 @@
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.2759
+        "momentum": 0.2759,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.1815
+        "momentum": 0.1815,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.171
+        "momentum": 0.171,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -125,17 +140,20 @@
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.2372
+        "momentum": 0.2372,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.1629
+        "momentum": 0.1629,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.1062
+        "momentum": 0.1062,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -149,17 +167,20 @@
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.2745
+        "momentum": 0.2745,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.2347
+        "momentum": 0.2347,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.1966
+        "momentum": 0.1966,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -173,17 +194,20 @@
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.1188
+        "momentum": 0.1188,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.1049
+        "momentum": 0.1049,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.0757
+        "momentum": 0.0757,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -197,17 +221,20 @@
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.1534
+        "momentum": 0.1534,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.0802
+        "momentum": 0.0802,
+        "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.0723
+        "momentum": 0.0723,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -221,17 +248,20 @@
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.2235
-      },
-      {
-        "ticker": "XLK",
-        "sector": "Technology",
-        "momentum": 0.1246
+        "momentum": 0.2235,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.1223
+        "momentum": 0.1223,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLK",
+        "sector": "Technology",
+        "momentum": 0.1246,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -245,17 +275,20 @@
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.1658
+        "momentum": 0.1658,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.0752
+        "momentum": 0.0752,
+        "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.0555
+        "momentum": 0.0555,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -269,17 +302,20 @@
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.1094
+        "momentum": 0.1094,
+        "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.0671
+        "momentum": 0.0671,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.0666
+        "momentum": 0.0666,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -293,17 +329,20 @@
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.0654
+        "momentum": 0.0654,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.0526
+        "momentum": 0.0526,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.0172
+        "momentum": 0.0172,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -315,19 +354,22 @@
     "date": "2016-03-31",
     "selected": [
       {
-        "ticker": "XLU",
-        "sector": "Utilities",
-        "momentum": 0.0772
-      },
-      {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.0532
+        "momentum": 0.0532,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.0083
+        "momentum": 0.0083,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLU",
+        "sector": "Utilities",
+        "momentum": 0.0772,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -341,17 +383,20 @@
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.158
+        "momentum": 0.158,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.1163
+        "momentum": 0.1163,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.091
+        "momentum": 0.091,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -365,17 +410,20 @@
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.1354
+        "momentum": 0.1354,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.1087
+        "momentum": 0.1087,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.0677
+        "momentum": 0.0677,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -389,17 +437,20 @@
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.1621
+        "momentum": 0.1621,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.1211
+        "momentum": 0.1211,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.0484
+        "momentum": 0.0484,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -413,17 +464,20 @@
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.2833
+        "momentum": 0.2833,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.1618
+        "momentum": 0.1618,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.0565
+        "momentum": 0.0565,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -437,17 +491,20 @@
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.2138
+        "momentum": 0.2138,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.1127
+        "momentum": 0.1127,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.112
+        "momentum": 0.112,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -461,17 +518,20 @@
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.2346
+        "momentum": 0.2346,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2304
+        "momentum": 0.2304,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.2031
+        "momentum": 0.2031,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -485,17 +545,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2322
+        "momentum": 0.2322,
+        "weight": 0.3333
       },
       {
         "ticker": "XLB",
         "sector": "Materials",
-        "momentum": 0.208
+        "momentum": 0.208,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.199
+        "momentum": 0.199,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -507,19 +570,22 @@
     "date": "2016-11-30",
     "selected": [
       {
-        "ticker": "XLU",
-        "sector": "Utilities",
-        "momentum": 0.1694
-      },
-      {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.1072
+        "momentum": 0.1072,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLU",
+        "sector": "Utilities",
+        "momentum": 0.1694,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.0849
+        "momentum": 0.0849,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -531,19 +597,22 @@
     "date": "2016-12-30",
     "selected": [
       {
+        "ticker": "XLU",
+        "sector": "Utilities",
+        "momentum": 0.1211,
+        "weight": 0.3333
+      },
+      {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.1601
+        "momentum": 0.1601,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.1394
-      },
-      {
-        "ticker": "XLU",
-        "sector": "Utilities",
-        "momentum": 0.1211
+        "momentum": 0.1394,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -555,19 +624,22 @@
     "date": "2017-01-31",
     "selected": [
       {
-        "ticker": "XLE",
-        "sector": "Energy",
-        "momentum": 0.2898
-      },
-      {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.2093
+        "momentum": 0.2093,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.1955
+        "momentum": 0.1955,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLE",
+        "sector": "Energy",
+        "momentum": 0.2898,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -579,19 +651,22 @@
     "date": "2017-02-28",
     "selected": [
       {
-        "ticker": "XLB",
-        "sector": "Materials",
-        "momentum": 0.4301
-      },
-      {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.4043
+        "momentum": 0.4043,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.3545
+        "momentum": 0.3545,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLB",
+        "sector": "Materials",
+        "momentum": 0.4301,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -605,17 +680,20 @@
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.4147
+        "momentum": 0.4147,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.2737
+        "momentum": 0.2737,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2697
+        "momentum": 0.2697,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -629,17 +707,20 @@
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.3131
+        "momentum": 0.3131,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2202
+        "momentum": 0.2202,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.194
+        "momentum": 0.194,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -653,17 +734,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3231
+        "momentum": 0.3231,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.2735
+        "momentum": 0.2735,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.2034
+        "momentum": 0.2034,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -677,17 +761,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.308
+        "momentum": 0.308,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.2404
+        "momentum": 0.2404,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.2399
+        "momentum": 0.2399,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -701,17 +788,20 @@
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.3735
+        "momentum": 0.3735,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2978
+        "momentum": 0.2978,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.2549
+        "momentum": 0.2549,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -725,17 +815,20 @@
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.3544
+        "momentum": 0.3544,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2679
+        "momentum": 0.2679,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.2162
+        "momentum": 0.2162,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -749,17 +842,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2629
+        "momentum": 0.2629,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.2583
+        "momentum": 0.2583,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.1824
+        "momentum": 0.1824,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -773,17 +869,20 @@
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.3732
+        "momentum": 0.3732,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2586
+        "momentum": 0.2586,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.2492
+        "momentum": 0.2492,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -797,17 +896,20 @@
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.3693
+        "momentum": 0.3693,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3487
+        "momentum": 0.3487,
+        "weight": 0.3333
       },
       {
         "ticker": "XLB",
         "sector": "Materials",
-        "momentum": 0.2872
+        "momentum": 0.2872,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -821,17 +923,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3374
+        "momentum": 0.3374,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.2509
+        "momentum": 0.2509,
+        "weight": 0.3333
       },
       {
         "ticker": "XLB",
         "sector": "Materials",
-        "momentum": 0.2227
+        "momentum": 0.2227,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -845,17 +950,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3321
-      },
-      {
-        "ticker": "XLI",
-        "sector": "Industrials",
-        "momentum": 0.2354
+        "momentum": 0.3321,
+        "weight": 0.3333
       },
       {
         "ticker": "XLB",
         "sector": "Materials",
-        "momentum": 0.2319
+        "momentum": 0.2319,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLI",
+        "sector": "Industrials",
+        "momentum": 0.2354,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -869,17 +977,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3718
+        "momentum": 0.3718,
+        "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.3289
+        "momentum": 0.3289,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.2946
+        "momentum": 0.2946,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -893,17 +1004,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3221
+        "momentum": 0.3221,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.2207
+        "momentum": 0.2207,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.1956
+        "momentum": 0.1956,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -917,17 +1031,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.245
+        "momentum": 0.245,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.1863
+        "momentum": 0.1863,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.1698
+        "momentum": 0.1698,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -941,17 +1058,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2273
+        "momentum": 0.2273,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.1786
+        "momentum": 0.1786,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.1664
+        "momentum": 0.1664,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -965,17 +1085,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2545
-      },
-      {
-        "ticker": "XLE",
-        "sector": "Energy",
-        "momentum": 0.2015
+        "momentum": 0.2545,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.1882
+        "momentum": 0.1882,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLE",
+        "sector": "Energy",
+        "momentum": 0.2015,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -989,17 +1112,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2862
-      },
-      {
-        "ticker": "XLY",
-        "sector": "Consumer Discretionary",
-        "momentum": 0.2413
+        "momentum": 0.2862,
+        "weight": 0.3333
       },
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.2151
+        "momentum": 0.2151,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLY",
+        "sector": "Consumer Discretionary",
+        "momentum": 0.2413,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1013,17 +1139,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2754
+        "momentum": 0.2754,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.2368
+        "momentum": 0.2368,
+        "weight": 0.3333
       },
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.1786
+        "momentum": 0.1786,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1037,17 +1166,20 @@
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.339
+        "momentum": 0.339,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3234
+        "momentum": 0.3234,
+        "weight": 0.3333
       },
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.242
+        "momentum": 0.242,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1061,17 +1193,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2967
+        "momentum": 0.2967,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.2927
+        "momentum": 0.2927,
+        "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.1744
+        "momentum": 0.1744,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1085,17 +1220,20 @@
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.1593
+        "momentum": 0.1593,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.1161
+        "momentum": 0.1161,
+        "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.1102
+        "momentum": 0.1102,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1109,17 +1247,20 @@
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.1532
+        "momentum": 0.1532,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.1384
+        "momentum": 0.1384,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.0648
+        "momentum": 0.0648,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1133,12 +1274,14 @@
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.0563
+        "momentum": 0.0563,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.0399
+        "momentum": 0.0399,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.3333,
@@ -1150,14 +1293,16 @@
     "date": "2019-02-28",
     "selected": [
       {
-        "ticker": "XLRE",
-        "sector": "Real Estate",
-        "momentum": 0.0875
-      },
-      {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.0788
+        "momentum": 0.0788,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLRE",
+        "sector": "Real Estate",
+        "momentum": 0.0875,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.3333,
@@ -1171,17 +1316,20 @@
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
-        "momentum": 0.1941
+        "momentum": 0.1941,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.194
+        "momentum": 0.194,
+        "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.0887
+        "momentum": 0.0887,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1195,17 +1343,20 @@
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
-        "momentum": 0.2082
+        "momentum": 0.2082,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.1971
+        "momentum": 0.1971,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.1704
+        "momentum": 0.1704,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1219,17 +1370,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2168
+        "momentum": 0.2168,
+        "weight": 0.3333
       },
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
-        "momentum": 0.2096
+        "momentum": 0.2096,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.1657
+        "momentum": 0.1657,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1243,17 +1397,20 @@
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
-        "momentum": 0.1996
+        "momentum": 0.1996,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.1875
+        "momentum": 0.1875,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.1671
+        "momentum": 0.1671,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1267,17 +1424,20 @@
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.1847
+        "momentum": 0.1847,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.1666
+        "momentum": 0.1666,
+        "weight": 0.3333
       },
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
-        "momentum": 0.1657
+        "momentum": 0.1657,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1291,17 +1451,20 @@
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.1775
+        "momentum": 0.1775,
+        "weight": 0.3333
       },
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
-        "momentum": 0.176
+        "momentum": 0.176,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.1496
+        "momentum": 0.1496,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1315,17 +1478,20 @@
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.213
+        "momentum": 0.213,
+        "weight": 0.3333
       },
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
-        "momentum": 0.1967
+        "momentum": 0.1967,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.1612
+        "momentum": 0.1612,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1339,17 +1505,20 @@
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.2535
+        "momentum": 0.2535,
+        "weight": 0.3333
       },
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
-        "momentum": 0.2367
+        "momentum": 0.2367,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.1456
+        "momentum": 0.1456,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1363,17 +1532,20 @@
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
-        "momentum": 0.2732
-      },
-      {
-        "ticker": "XLK",
-        "sector": "Technology",
-        "momentum": 0.2686
+        "momentum": 0.2732,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.2185
+        "momentum": 0.2185,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLK",
+        "sector": "Technology",
+        "momentum": 0.2686,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1387,17 +1559,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3158
+        "momentum": 0.3158,
+        "weight": 0.3333
       },
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
-        "momentum": 0.1916
+        "momentum": 0.1916,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.1874
+        "momentum": 0.1874,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1411,17 +1586,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.4986
+        "momentum": 0.4986,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.3187
+        "momentum": 0.3187,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.3105
+        "momentum": 0.3105,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1435,17 +1613,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.5301
-      },
-      {
-        "ticker": "XLU",
-        "sector": "Utilities",
-        "momentum": 0.3303
+        "momentum": 0.5301,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.2781
+        "momentum": 0.2781,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLU",
+        "sector": "Utilities",
+        "momentum": 0.3303,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1459,17 +1640,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3277
+        "momentum": 0.3277,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.1885
+        "momentum": 0.1885,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.1572
+        "momentum": 0.1572,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1483,7 +1667,8 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.0878
+        "momentum": 0.0878,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.6667,
@@ -1497,17 +1682,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.1843
+        "momentum": 0.1843,
+        "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.1496
+        "momentum": 0.1496,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.05
+        "momentum": 0.05,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1521,17 +1709,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3831
+        "momentum": 0.3831,
+        "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.1968
+        "momentum": 0.1968,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.1717
+        "momentum": 0.1717,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1545,17 +1736,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3356
+        "momentum": 0.3356,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.1162
+        "momentum": 0.1162,
+        "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.1033
+        "momentum": 0.1033,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1569,17 +1763,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.394
+        "momentum": 0.394,
+        "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.1843
+        "momentum": 0.1843,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.1664
+        "momentum": 0.1664,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1593,17 +1790,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.5759
-      },
-      {
-        "ticker": "XLC",
-        "sector": "Communication Services",
-        "momentum": 0.2892
+        "momentum": 0.5759,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.2725
+        "momentum": 0.2725,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLC",
+        "sector": "Communication Services",
+        "momentum": 0.2892,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1617,17 +1817,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.5269
+        "momentum": 0.5269,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.2828
+        "momentum": 0.2828,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.2594
+        "momentum": 0.2594,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1641,17 +1844,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3725
+        "momentum": 0.3725,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.2182
+        "momentum": 0.2182,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.2041
+        "momentum": 0.2041,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1665,17 +1871,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.4586
+        "momentum": 0.4586,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.3211
+        "momentum": 0.3211,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.291
+        "momentum": 0.291,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1689,17 +1898,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.4394
+        "momentum": 0.4394,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.2897
+        "momentum": 0.2897,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.2697
+        "momentum": 0.2697,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1713,17 +1925,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3737
+        "momentum": 0.3737,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.3347
+        "momentum": 0.3347,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.2352
+        "momentum": 0.2352,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1737,17 +1952,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.4381
-      },
-      {
-        "ticker": "XLB",
-        "sector": "Materials",
-        "momentum": 0.4097
+        "momentum": 0.4381,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.3992
+        "momentum": 0.3992,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLB",
+        "sector": "Materials",
+        "momentum": 0.4097,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1761,17 +1979,20 @@
       {
         "ticker": "XLB",
         "sector": "Materials",
-        "momentum": 0.7838
+        "momentum": 0.7838,
+        "weight": 0.3333
       },
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.7799
+        "momentum": 0.7799,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.7272
+        "momentum": 0.7272,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1785,17 +2006,20 @@
       {
         "ticker": "XLB",
         "sector": "Materials",
-        "momentum": 0.6004
+        "momentum": 0.6004,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.5988
+        "momentum": 0.5988,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.5908
+        "momentum": 0.5908,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1809,17 +2033,20 @@
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.6493
+        "momentum": 0.6493,
+        "weight": 0.3333
       },
       {
         "ticker": "XLB",
         "sector": "Materials",
-        "momentum": 0.6158
+        "momentum": 0.6158,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.5804
+        "momentum": 0.5804,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1833,17 +2060,20 @@
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.6163
+        "momentum": 0.6163,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.5119
+        "momentum": 0.5119,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.5093
+        "momentum": 0.5093,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1857,17 +2087,20 @@
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.5497
+        "momentum": 0.5497,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.4516
+        "momentum": 0.4516,
+        "weight": 0.3333
       },
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.4308
+        "momentum": 0.4308,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1881,17 +2114,20 @@
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.562
+        "momentum": 0.562,
+        "weight": 0.3333
       },
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.4277
+        "momentum": 0.4277,
+        "weight": 0.3333
       },
       {
         "ticker": "XLB",
         "sector": "Materials",
-        "momentum": 0.3841
+        "momentum": 0.3841,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1905,17 +2141,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.8213
+        "momentum": 0.8213,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.5876
+        "momentum": 0.5876,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.3579
+        "momentum": 0.3579,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1929,17 +2168,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 1.1072
+        "momentum": 1.1072,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.7231
+        "momentum": 0.7231,
+        "weight": 0.3333
       },
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
-        "momentum": 0.4407
+        "momentum": 0.4407,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1953,17 +2195,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.5315
+        "momentum": 0.5315,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.3502
+        "momentum": 0.3502,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3414
+        "momentum": 0.3414,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -1977,17 +2222,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.5161
-      },
-      {
-        "ticker": "XLRE",
-        "sector": "Real Estate",
-        "momentum": 0.4757
+        "momentum": 0.5161,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.3671
+        "momentum": 0.3671,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLRE",
+        "sector": "Real Estate",
+        "momentum": 0.4757,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2001,17 +2249,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.6963
+        "momentum": 0.6963,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.3166
+        "momentum": 0.3166,
+        "weight": 0.3333
       },
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
-        "momentum": 0.2558
+        "momentum": 0.2558,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2025,17 +2276,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.5311
+        "momentum": 0.5311,
+        "weight": 0.3333
       },
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
-        "momentum": 0.2864
+        "momentum": 0.2864,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.2144
+        "momentum": 0.2144,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2049,17 +2303,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.6516
+        "momentum": 0.6516,
+        "weight": 0.3333
       },
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
-        "momentum": 0.2702
+        "momentum": 0.2702,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2236
+        "momentum": 0.2236,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2073,17 +2330,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.591
-      },
-      {
-        "ticker": "XLP",
-        "sector": "Consumer Staples",
-        "momentum": 0.143
+        "momentum": 0.591,
+        "weight": 0.3333
       },
       {
         "ticker": "XLRE",
         "sector": "Real Estate",
-        "momentum": 0.1186
+        "momentum": 0.1186,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLP",
+        "sector": "Consumer Staples",
+        "momentum": 0.143,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2097,17 +2357,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.6817
+        "momentum": 0.6817,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.1825
+        "momentum": 0.1825,
+        "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.1034
+        "momentum": 0.1034,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2121,17 +2384,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.4369
+        "momentum": 0.4369,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.1282
+        "momentum": 0.1282,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.0652
+        "momentum": 0.0652,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2145,17 +2411,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.636
+        "momentum": 0.636,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.1452
+        "momentum": 0.1452,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.0773
+        "momentum": 0.0773,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2169,17 +2438,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.7408
+        "momentum": 0.7408,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.1177
+        "momentum": 0.1177,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.0374
+        "momentum": 0.0374,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2193,12 +2465,14 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.4454
+        "momentum": 0.4454,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.0559
+        "momentum": 0.0559,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.3333,
@@ -2212,17 +2486,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.6371
-      },
-      {
-        "ticker": "XLP",
-        "sector": "Consumer Staples",
-        "momentum": 0.0471
+        "momentum": 0.6371,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.0276
+        "momentum": 0.0276,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLP",
+        "sector": "Consumer Staples",
+        "momentum": 0.0471,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2236,17 +2513,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.7455
+        "momentum": 0.7455,
+        "weight": 0.3333
       },
       {
         "ticker": "XLP",
         "sector": "Consumer Staples",
-        "momentum": 0.1263
+        "momentum": 0.1263,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.1182
+        "momentum": 0.1182,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2260,12 +2540,14 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.6271
+        "momentum": 0.6271,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.0316
+        "momentum": 0.0316,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.3333,
@@ -2279,17 +2561,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.4589
+        "momentum": 0.4589,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.066
+        "momentum": 0.066,
+        "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.0579
+        "momentum": 0.0579,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2303,17 +2588,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.2591
+        "momentum": 0.2591,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.0604
+        "momentum": 0.0604,
+        "weight": 0.3333
       },
       {
         "ticker": "XLB",
         "sector": "Materials",
-        "momentum": 0.0475
+        "momentum": 0.0475,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2327,7 +2615,8 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.1128
+        "momentum": 0.1128,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.6667,
@@ -2341,12 +2630,14 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.1388
+        "momentum": 0.1388,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.0475
+        "momentum": 0.0475,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.3333,
@@ -2360,12 +2651,14 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.1731
+        "momentum": 0.1731,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.0436
+        "momentum": 0.0436,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.3333,
@@ -2379,17 +2672,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3439
+        "momentum": 0.3439,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.2366
+        "momentum": 0.2366,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.2127
+        "momentum": 0.2127,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2403,17 +2699,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2224
-      },
-      {
-        "ticker": "XLC",
-        "sector": "Communication Services",
-        "momentum": 0.2083
+        "momentum": 0.2224,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.165
+        "momentum": 0.165,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLC",
+        "sector": "Communication Services",
+        "momentum": 0.2083,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2427,17 +2726,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2787
+        "momentum": 0.2787,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.2473
+        "momentum": 0.2473,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.1637
+        "momentum": 0.1637,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2451,17 +2753,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.381
+        "momentum": 0.381,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.3754
+        "momentum": 0.3754,
+        "weight": 0.3333
       },
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.2659
+        "momentum": 0.2659,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2475,17 +2780,20 @@
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.3323
+        "momentum": 0.3323,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2775
+        "momentum": 0.2775,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.0593
+        "momentum": 0.0593,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2499,17 +2807,20 @@
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.4339
+        "momentum": 0.4339,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.4274
+        "momentum": 0.4274,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.2038
+        "momentum": 0.2038,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2523,17 +2834,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.5989
+        "momentum": 0.5989,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.5711
+        "momentum": 0.5711,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.4285
+        "momentum": 0.4285,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2547,17 +2861,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.4899
+        "momentum": 0.4899,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.4203
+        "momentum": 0.4203,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.1874
+        "momentum": 0.1874,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2571,17 +2888,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.5091
+        "momentum": 0.5091,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.4865
+        "momentum": 0.4865,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.2686
+        "momentum": 0.2686,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2595,17 +2915,20 @@
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.4672
+        "momentum": 0.4672,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.4306
+        "momentum": 0.4306,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.3378
+        "momentum": 0.3378,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2619,17 +2942,20 @@
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.3243
+        "momentum": 0.3243,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2976
+        "momentum": 0.2976,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.2418
+        "momentum": 0.2418,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2643,17 +2969,20 @@
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.342
+        "momentum": 0.342,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3137
+        "momentum": 0.3137,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.2939
+        "momentum": 0.2939,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2667,17 +2996,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3422
+        "momentum": 0.3422,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.3376
+        "momentum": 0.3376,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.2541
+        "momentum": 0.2541,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2691,17 +3023,20 @@
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.2668
+        "momentum": 0.2668,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.2416
+        "momentum": 0.2416,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.1882
+        "momentum": 0.1882,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2715,17 +3050,20 @@
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.3364
+        "momentum": 0.3364,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.2954
+        "momentum": 0.2954,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.263
+        "momentum": 0.263,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2737,19 +3075,22 @@
     "date": "2024-10-31",
     "selected": [
       {
-        "ticker": "XLU",
-        "sector": "Utilities",
-        "momentum": 0.4976
-      },
-      {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.3947
+        "momentum": 0.3947,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.3801
+        "momentum": 0.3801,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLU",
+        "sector": "Utilities",
+        "momentum": 0.4976,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2763,17 +3104,20 @@
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.4965
+        "momentum": 0.4965,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.4577
+        "momentum": 0.4577,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.4204
+        "momentum": 0.4204,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2787,17 +3131,20 @@
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.4699
+        "momentum": 0.4699,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.4174
+        "momentum": 0.4174,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.3807
+        "momentum": 0.3807,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2811,17 +3158,20 @@
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.3434
+        "momentum": 0.3434,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.3001
+        "momentum": 0.3001,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.2668
+        "momentum": 0.2668,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2835,17 +3185,20 @@
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.3564
+        "momentum": 0.3564,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.3476
+        "momentum": 0.3476,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.3259
+        "momentum": 0.3259,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2857,19 +3210,22 @@
     "date": "2025-03-31",
     "selected": [
       {
-        "ticker": "XLU",
-        "sector": "Utilities",
-        "momentum": 0.3207
-      },
-      {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.3181
+        "momentum": 0.3181,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.3021
+        "momentum": 0.3021,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLU",
+        "sector": "Utilities",
+        "momentum": 0.3207,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2883,17 +3239,20 @@
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.2463
+        "momentum": 0.2463,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.2076
+        "momentum": 0.2076,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.1925
+        "momentum": 0.1925,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2907,17 +3266,20 @@
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.2285
+        "momentum": 0.2285,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.2131
+        "momentum": 0.2131,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.2048
+        "momentum": 0.2048,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2931,17 +3293,20 @@
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.2411
-      },
-      {
-        "ticker": "XLY",
-        "sector": "Consumer Discretionary",
-        "momentum": 0.2355
+        "momentum": 0.2411,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.2311
+        "momentum": 0.2311,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLY",
+        "sector": "Consumer Discretionary",
+        "momentum": 0.2355,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2955,17 +3320,20 @@
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.3047
+        "momentum": 0.3047,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.2603
+        "momentum": 0.2603,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.2326
+        "momentum": 0.2326,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -2979,17 +3347,20 @@
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.2861
+        "momentum": 0.2861,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.2336
+        "momentum": 0.2336,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2286
+        "momentum": 0.2286,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -3003,17 +3374,20 @@
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.2871
+        "momentum": 0.2871,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.2575
+        "momentum": 0.2575,
+        "weight": 0.3333
       },
       {
         "ticker": "XLF",
         "sector": "Financials",
-        "momentum": 0.2233
+        "momentum": 0.2233,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -3027,17 +3401,20 @@
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.303
-      },
-      {
-        "ticker": "XLK",
-        "sector": "Technology",
-        "momentum": 0.2756
+        "momentum": 0.303,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.205
+        "momentum": 0.205,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLK",
+        "sector": "Technology",
+        "momentum": 0.2756,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -3051,17 +3428,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.329
+        "momentum": 0.329,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.2948
+        "momentum": 0.2948,
+        "weight": 0.3333
       },
       {
         "ticker": "XLY",
         "sector": "Consumer Discretionary",
-        "momentum": 0.2011
+        "momentum": 0.2011,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -3075,17 +3455,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2275
+        "momentum": 0.2275,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.1886
+        "momentum": 0.1886,
+        "weight": 0.3333
       },
       {
         "ticker": "XLU",
         "sector": "Utilities",
-        "momentum": 0.099
+        "momentum": 0.099,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -3099,17 +3482,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2158
+        "momentum": 0.2158,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.2089
+        "momentum": 0.2089,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.1811
+        "momentum": 0.1811,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -3123,17 +3509,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3197
+        "momentum": 0.3197,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.1955
+        "momentum": 0.1955,
+        "weight": 0.3333
       },
       {
         "ticker": "XLC",
         "sector": "Communication Services",
-        "momentum": 0.1708
+        "momentum": 0.1708,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -3147,17 +3536,20 @@
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.3481
-      },
-      {
-        "ticker": "XLE",
-        "sector": "Energy",
-        "momentum": 0.3156
+        "momentum": 0.3481,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2616
+        "momentum": 0.2616,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLE",
+        "sector": "Energy",
+        "momentum": 0.3156,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -3171,17 +3563,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.3681
+        "momentum": 0.3681,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.2953
+        "momentum": 0.2953,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.2594
+        "momentum": 0.2594,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -3195,17 +3590,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.5377
+        "momentum": 0.5377,
+        "weight": 0.3333
       },
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.4686
+        "momentum": 0.4686,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.3305
+        "momentum": 0.3305,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -3219,17 +3617,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.6616
+        "momentum": 0.6616,
+        "weight": 0.3333
       },
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.4231
+        "momentum": 0.4231,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.2305
+        "momentum": 0.2305,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -3243,17 +3644,20 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.4737
+        "momentum": 0.4737,
+        "weight": 0.3333
       },
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.2842
+        "momentum": 0.2842,
+        "weight": 0.3333
       },
       {
         "ticker": "XLI",
         "sector": "Industrials",
-        "momentum": 0.259
+        "momentum": 0.259,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -3267,17 +3671,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.4007
+        "momentum": 0.4007,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3319
+        "momentum": 0.3319,
+        "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.2325
+        "momentum": 0.2325,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
@@ -3291,17 +3698,20 @@
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.5417
+        "momentum": 0.5417,
+        "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3866
+        "momentum": 0.3866,
+        "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.3154
+        "momentum": 0.3154,
+        "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,

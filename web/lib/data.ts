@@ -17,6 +17,14 @@ export type WalkForward = {
   test_benchmark_equal_weight: Stats;
 };
 
+export type ExtensionTested = {
+  label: string;
+  full_sharpe: number;
+  oos_sharpe: number;
+  full_sharpe_delta: number;
+  oos_sharpe_delta: number;
+};
+
 export type Summary = {
   backtest_start: string;
   backtest_end: string;
@@ -32,6 +40,7 @@ export type Summary = {
   risk_free_annual_avg: number;
   selection_note: string;
   walk_forward: WalkForward;
+  extensions_tested: ExtensionTested[];
 };
 
 export type PerformancePoint = {
@@ -43,7 +52,7 @@ export type PerformancePoint = {
 
 export type RebalanceEntry = {
   date: string;
-  selected: { ticker: string; sector: string; momentum: number }[];
+  selected: { ticker: string; sector: string; momentum: number; weight: number }[];
   cash_weight: number;
   cash_hurdle: number;
   turnover: number;

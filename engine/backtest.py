@@ -38,6 +38,33 @@ Methodology, in order of what a reviewer would ask about:
 5. Risk-free rate: real 13-week T-bill yield (^IRX), not an assumed 0%, used
    both as the absolute-momentum cash hurdle and in every Sharpe ratio.
 
+6. No-trade band: a currently-held sector isn't dropped just because a
+   challenger edges narrowly ahead of it - it's only replaced if a challenger
+   beats it by more than NO_TRADE_BAND. This is a fixed, round, standard
+   buffer size (2 percentage points), not grid-searched against this data -
+   the same "fixed, not optimized" treatment already applied to `top_n`.
+   Cuts turnover (and therefore transaction costs) directly, without touching
+   the underlying signal.
+
+7. Volatility targeting: the strategy's exposure is scaled so trailing
+   realized volatility tracks a target (the SELECTED config's own TRAINING-
+   period volatility - not an arbitrary number, and not picked to flatter the
+   full-period result). Capped at VOL_TARGET_CAP (1.5x) - a first version of
+   this capped at 1x to dodge financing-cost modeling entirely, but most of
+   the literature's documented Sharpe benefit (Moreira & Muir) specifically
+   comes from levering UP in calm regimes, not just de-risking in volatile
+   ones, so a 1x cap structurally can't capture it. The levered fraction
+   (scale > 1x) pays a modeled financing cost of LEVERAGE_SPREAD_BPS_ANNUAL
+   over the risk-free rate. The scale factor is lagged by one day (uses
+   yesterday's realized vol) to avoid look-ahead. Reported both with and
+   without this overlay (see strategy_pre_vol_target).
+
+8. Risk-parity weighting: selected sectors are weighted inversely to their
+   own trailing realized volatility (RISK_PARITY_LOOKBACK_DAYS) rather than
+   flat equal-weight, so a single volatile sector doesn't dominate portfolio
+   risk. Total invested weight is unchanged - only the split across selected
+   sectors differs from equal-weight.
+
 Outputs, written into the Next.js app's public folder so the dashboard can
 read them directly:
   web/public/data/performance.json  - daily cumulative performance series (net of costs)
@@ -71,6 +98,17 @@ RISK_FREE_TICKER = "^IRX"  # 13-week T-bill discount yield, annualized %, e.g. 5
 TOP_N = 3
 COST_BPS_PER_TRADE = 10  # 0.10% per unit of portfolio weight turnover - a conservative
 # assumption for liquid, large-cap SPDR sector ETFs; real costs are typically lower.
+NO_TRADE_BAND = 0.0  # off by default - tested at 0.02 (see extensions_tested in summary.json /
+# README), found to reduce Sharpe for this specific momentum strategy (delayed rotation costs
+# more than the saved turnover), so it's not applied by default. Kept as an opt-in parameter.
+NO_TRADE_BAND_TESTED = 0.02  # the value actually evaluated in the extensions-tested comparison.
+VOL_TARGET_LOOKBACK_DAYS = 63  # ~3 months of realized daily returns, a standard window.
+VOL_TARGET_CAP = 1.5  # max exposure when vol-targeting is on - see docstring point 7.
+LEVERAGE_SPREAD_BPS_ANNUAL = 50  # financing cost above the risk-free rate for the levered
+# fraction (scale > 1x) - a conservative approximation of futures-implied financing cost,
+# how a vol-target overlay like this is typically implemented in practice rather than via
+# margin borrowing. Fixed, not tuned against this data.
+RISK_PARITY_LOOKBACK_DAYS = 63  # matches VOL_TARGET_LOOKBACK_DAYS for consistency.
 
 START = "2014-01-01"
 WALK_FORWARD_SPLIT = "2021-01-01"  # config is selected using data before this date only
@@ -120,6 +158,9 @@ def run_backtest(
     top_n: int = TOP_N,
     cost_bps: float = COST_BPS_PER_TRADE,
     absolute_momentum: bool = True,
+    no_trade_band: float = NO_TRADE_BAND,
+    target_vol: float | None = None,
+    risk_parity: bool = False,
     period_start=None,
     period_end=None,
 ):
@@ -129,6 +170,14 @@ def run_backtest(
     period_start where needed, so a test-period-only run still has real pre-period data
     to compute its first few rebalances' signals from - only the reported P&L is scoped
     to the requested period.
+
+    `target_vol`: if set, scales exposure (up to VOL_TARGET_CAP, which may exceed 1x - the
+    levered fraction pays LEVERAGE_SPREAD_BPS_ANNUAL over the risk-free rate) so trailing
+    realized vol tracks this annualized target, lagged one day. If None, vol targeting is
+    off and the raw signal-driven exposure is used as-is.
+
+    `risk_parity`: if True, selected sectors are weighted inversely to their own trailing
+    realized volatility instead of equal-weight (total invested weight unchanged).
     """
     sector_prices = prices[list(SECTOR_ETFS.keys())]
     bench_prices = prices[BENCHMARK]
@@ -171,9 +220,41 @@ def run_backtest(
         cash_hurdle = float((1 + rf_window).prod() - 1) if len(rf_window) else 0.0
 
         eligible = momentum[momentum > cash_hurdle] if absolute_momentum else momentum
-        top = eligible.head(top_n)
+        # eligible is already sorted descending (inherited from `momentum`'s sort).
 
-        current_weights = {ticker: 1.0 / top_n for ticker in top.index}
+        # No-trade band: keep a currently-held, still-eligible sector unless a challenger
+        # beats it by more than `no_trade_band` - reduces turnover-driven cost without
+        # touching the underlying signal. Falls back to plain top-n when band is 0.
+        held_tickers = [t for t in prev_weights if t != "CASH"]
+        if len(eligible) >= top_n:
+            cutoff_momentum = float(eligible.iloc[top_n - 1])
+        elif len(eligible):
+            cutoff_momentum = float(eligible.iloc[-1])
+        else:
+            cutoff_momentum = None
+
+        retained = [
+            t for t in held_tickers
+            if t in eligible.index and (cutoff_momentum is None or eligible[t] >= cutoff_momentum - no_trade_band)
+        ]
+        retained = sorted(retained, key=lambda t: eligible[t], reverse=True)[:top_n]
+        fill = [t for t in eligible.index if t not in retained][: top_n - len(retained)]
+        top_tickers = retained + fill
+
+        invested_total = len(top_tickers) / top_n
+        if risk_parity and top_tickers:
+            vol_hist = daily_returns.loc[:rebal_date, top_tickers].iloc[-RISK_PARITY_LOOKBACK_DAYS:]
+            realized_vols = vol_hist.std() * np.sqrt(252)
+            inv_vol = 1.0 / realized_vols
+            if inv_vol.notna().all() and np.isfinite(inv_vol).all() and inv_vol.sum() > 0:
+                within_weights = inv_vol / inv_vol.sum()
+                current_weights = {t: float(within_weights[t]) * invested_total for t in top_tickers}
+            else:
+                # Not enough history yet to estimate vol for one or more names - fall back
+                # to equal-weight rather than dividing by a NaN/zero vol.
+                current_weights = {ticker: 1.0 / top_n for ticker in top_tickers}
+        else:
+            current_weights = {ticker: 1.0 / top_n for ticker in top_tickers}
         cash_weight = 1.0 - sum(current_weights.values())
         if cash_weight > 1e-9:
             current_weights["CASH"] = cash_weight
@@ -185,8 +266,13 @@ def run_backtest(
         rebalance_log.append({
             "date": rebal_date.strftime("%Y-%m-%d"),
             "selected": [
-                {"ticker": t, "sector": SECTOR_ETFS[t], "momentum": round(float(momentum[t]), 4)}
-                for t in top.index
+                {
+                    "ticker": t,
+                    "sector": SECTOR_ETFS[t],
+                    "momentum": round(float(momentum[t]), 4),
+                    "weight": round(float(current_weights[t]), 4),
+                }
+                for t in top_tickers
             ],
             "cash_weight": round(cash_weight, 4),
             "cash_hurdle": round(cash_hurdle, 4),
@@ -208,10 +294,35 @@ def run_backtest(
 
         prev_weights = current_weights
 
-    strategy_cum = (1 + strategy_daily).cumprod()
     bench_cum = (1 + bench_returns.loc[idx]).cumprod()
     ew_cum = (1 + equal_weight_daily).cumprod()
     rf_aligned = rf_daily.reindex(idx).fillna(0)
+
+    pre_vol_target_daily = strategy_daily
+    vol_target_info = None
+    if target_vol is not None:
+        realized_vol = strategy_daily.rolling(VOL_TARGET_LOOKBACK_DAYS).std() * np.sqrt(252)
+        raw_scale = (target_vol / realized_vol).clip(upper=VOL_TARGET_CAP)
+        scale = raw_scale.shift(1).fillna(1.0).clip(lower=0.0)
+
+        underinvested = (1.0 - scale).clip(lower=0.0)  # fraction sitting in cash when scale < 1
+        overlevered = (scale - 1.0).clip(lower=0.0)  # fraction borrowed when scale > 1
+        spread_daily = (LEVERAGE_SPREAD_BPS_ANNUAL / 10000.0) / 252.0
+        strategy_daily = (
+            scale * pre_vol_target_daily
+            + underinvested * rf_aligned
+            - overlevered * (rf_aligned + spread_daily)
+        )
+        vol_target_info = {
+            "target_vol": round(float(target_vol), 4),
+            "lookback_days": VOL_TARGET_LOOKBACK_DAYS,
+            "cap": VOL_TARGET_CAP,
+            "leverage_spread_bps_annual": LEVERAGE_SPREAD_BPS_ANNUAL,
+            "avg_exposure": round(float(scale.mean()), 4),
+            "pct_days_levered": round(float((scale > 1.0 + 1e-9).mean()), 4),
+        }
+
+    strategy_cum = (1 + strategy_daily).cumprod()
 
     def annualized_return(cum_series):
         n_years = (cum_series.index[-1] - cum_series.index[0]).days / 365.25
@@ -246,6 +357,10 @@ def run_backtest(
         "benchmark_spy": stats(bench_cum, bench_returns.loc[idx]),
         "benchmark_equal_weight": stats(ew_cum, equal_weight_daily),
     }
+    if target_vol is not None:
+        pre_cum = (1 + pre_vol_target_daily).cumprod()
+        summary["strategy_pre_vol_target"] = stats(pre_cum, pre_vol_target_daily)
+        summary["vol_target"] = vol_target_info
 
     performance = pd.DataFrame({
         "date": idx.strftime("%Y-%m-%d"),
@@ -301,8 +416,9 @@ def main():
     print(f"Stage 1: selecting config using TRAINING data only ({prices.index[0].date()} to {split.date()})...\n")
     grid_results = []
     best = None
+    best_train_performance = None
     for cfg in GRID:
-        summary, _, _ = run_backtest(prices, rf_daily, **cfg, period_end=split)
+        summary, _, performance = run_backtest(prices, rf_daily, **cfg, period_end=split)
         row = {
             **cfg,
             "sharpe": summary["strategy"]["sharpe_ratio"],
@@ -314,6 +430,7 @@ def main():
               f"Sharpe={row['sharpe']:>6}  AnnRet={row['annualized_return']:>7}  vs SPY Sharpe={row['vs_spy_sharpe']:>+.3f}")
         if best is None or row["sharpe"] > best["sharpe"]:
             best = row
+            best_train_performance = performance
 
     wf_config = {"lookback_months": best["lookback_months"], "skip_month": best["skip_month"]}
     for row in grid_results:
@@ -330,10 +447,38 @@ def main():
     print("Stage 4: full-period run at zero cost, for a gross-vs-net comparison...\n")
     gross_summary, _, _ = run_backtest(prices, rf_daily, **wf_config, cost_bps=0)
 
+    print("Stage 5: evaluating optional extensions (no-trade band, vol targeting, risk parity) - "
+          "kept opt-in in the code, off by default here based on what this comparison finds...\n")
+    train_daily = best_train_performance["strategy_cumulative"].pct_change().dropna()
+    target_vol = float(train_daily.std() * np.sqrt(252))
+
+    def ext_stats(**kwargs):
+        f, _, _ = run_backtest(prices, rf_daily, **wf_config, **kwargs)
+        o, _, _ = run_backtest(prices, rf_daily, **wf_config, period_start=split, **kwargs)
+        return f["strategy"]["sharpe_ratio"], o["strategy"]["sharpe_ratio"]
+
+    extensions_tested = []
+    for label, kwargs in [
+        ("No-trade band (2pp) - cuts turnover, delays rotation", {"no_trade_band": NO_TRADE_BAND_TESTED}),
+        ("Volatility targeting (up to 1.5x, financing cost modelled)", {"target_vol": target_vol}),
+        ("Risk-parity weighting (inverse-vol instead of equal-weight)", {"risk_parity": True}),
+        ("Vol targeting + risk parity combined", {"target_vol": target_vol, "risk_parity": True}),
+    ]:
+        full_sharpe, oos_sharpe = ext_stats(**kwargs)
+        extensions_tested.append({
+            "label": label,
+            "full_sharpe": full_sharpe,
+            "oos_sharpe": oos_sharpe,
+            "full_sharpe_delta": round(full_sharpe - full_summary["strategy"]["sharpe_ratio"], 3),
+            "oos_sharpe_delta": round(oos_sharpe - oos_summary["strategy"]["sharpe_ratio"], 3),
+        })
+        print(f"  {label:58s} full {full_sharpe:.3f}  oos {oos_sharpe:.3f}")
+
     full_summary["generated_at"] = datetime.now(timezone.utc).isoformat()
     full_summary["transaction_cost_bps"] = COST_BPS_PER_TRADE
     full_summary["strategy_gross_of_costs"] = gross_summary["strategy"]
     full_summary["risk_free_annual_avg"] = round(float(rf_daily.reindex(prices.index).mean() * 252), 4)
+    full_summary["extensions_tested"] = extensions_tested
     full_summary["selection_note"] = (
         "Config selected by best Sharpe on TRAINING data only (start to "
         f"{WALK_FORWARD_SPLIT}), never on the period it's evaluated over here - a walk-forward "
@@ -342,7 +487,12 @@ def main():
         "trailing return beats the realised risk-free/cash return over the same window; "
         "otherwise that sleeve sits in cash. Net of an assumed "
         f"{COST_BPS_PER_TRADE}bps transaction cost per unit of portfolio turnover "
-        "(see strategy_gross_of_costs for the zero-cost comparison)."
+        "(see strategy_gross_of_costs for the zero-cost comparison). Four further extensions "
+        "(no-trade band, vol targeting, leveraged vol targeting, risk-parity weighting) were "
+        "implemented and evaluated through this same walk-forward split - see "
+        "extensions_tested: none improved Sharpe, so all are left off by default. Kept in the "
+        "code as opt-in parameters rather than deleted, since a documented negative result is "
+        "still a result."
     )
     full_summary["walk_forward"] = {
         "train_period": [prices.index[0].strftime("%Y-%m-%d"), WALK_FORWARD_SPLIT],
