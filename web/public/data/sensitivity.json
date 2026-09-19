@@ -2,43 +2,49 @@
   {
     "lookback_months": 3,
     "skip_month": false,
-    "sharpe": 0.803,
-    "annualized_return": 0.1305,
-    "vs_spy_sharpe": -0.038
+    "sharpe": 0.386,
+    "annualized_return": 0.0526,
+    "vs_spy_sharpe": -0.352,
+    "selected": false
   },
   {
     "lookback_months": 6,
     "skip_month": false,
-    "sharpe": 0.711,
-    "annualized_return": 0.111,
-    "vs_spy_sharpe": -0.13
+    "sharpe": 0.49,
+    "annualized_return": 0.0769,
+    "vs_spy_sharpe": -0.248,
+    "selected": false
   },
   {
     "lookback_months": 9,
     "skip_month": false,
-    "sharpe": 0.752,
-    "annualized_return": 0.1198,
-    "vs_spy_sharpe": -0.089
+    "sharpe": 0.488,
+    "annualized_return": 0.0781,
+    "vs_spy_sharpe": -0.25,
+    "selected": false
   },
   {
     "lookback_months": 12,
     "skip_month": false,
-    "sharpe": 0.711,
-    "annualized_return": 0.1115,
-    "vs_spy_sharpe": -0.13
+    "sharpe": 0.314,
+    "annualized_return": 0.0477,
+    "vs_spy_sharpe": -0.424,
+    "selected": false
   },
   {
     "lookback_months": 6,
     "skip_month": true,
-    "sharpe": 0.661,
-    "annualized_return": 0.1049,
-    "vs_spy_sharpe": -0.18
+    "sharpe": 0.453,
+    "annualized_return": 0.0744,
+    "vs_spy_sharpe": -0.285,
+    "selected": false
   },
   {
     "lookback_months": 12,
     "skip_month": true,
-    "sharpe": 0.812,
-    "annualized_return": 0.1322,
-    "vs_spy_sharpe": -0.029
+    "sharpe": 0.576,
+    "annualized_return": 0.0969,
+    "vs_spy_sharpe": -0.162,
+    "selected": true
   }
 ]

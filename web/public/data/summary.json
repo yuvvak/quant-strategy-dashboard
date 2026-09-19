@@ -1,32 +1,74 @@
 {
-  "backtest_start": "2014-01-02",
-  "backtest_end": "2026-09-01",
+  "period_start": "2014-01-02",
+  "period_end": "2026-09-18",
   "config": {
     "lookback_months": 12,
     "skip_month": true,
     "top_n": 3
   },
   "strategy": {
-    "total_return": 3.8178,
-    "annualized_return": 0.1322,
-    "annualized_vol": 0.1714,
-    "sharpe_ratio": 0.812,
-    "max_drawdown": -0.3278
+    "total_return": 3.3554,
+    "annualized_return": 0.1227,
+    "annualized_vol": 0.1697,
+    "sharpe_ratio": 0.656,
+    "max_drawdown": -0.3282
   },
   "benchmark_spy": {
-    "total_return": 4.1403,
-    "annualized_return": 0.138,
-    "annualized_vol": 0.1715,
-    "sharpe_ratio": 0.841,
+    "total_return": 4.1524,
+    "annualized_return": 0.1377,
+    "annualized_vol": 0.1713,
+    "sharpe_ratio": 0.729,
     "max_drawdown": -0.3372
   },
   "benchmark_equal_weight": {
-    "total_return": 2.8999,
-    "annualized_return": 0.1135,
-    "annualized_vol": 0.1575,
-    "sharpe_ratio": 0.763,
+    "total_return": 2.8285,
+    "annualized_return": 0.1114,
+    "annualized_vol": 0.1573,
+    "sharpe_ratio": 0.631,
     "max_drawdown": -0.3634
   },
-  "generated_at": "2026-09-02T10:52:36.230902+00:00",
-  "selection_note": "Config selected as the best Sharpe ratio among a small, literature-grounded grid (3/6/9/12-month lookback x with/without 1-month skip), not an unconstrained parameter search. Full grid in sensitivity.json for transparency."
+  "generated_at": "2026-09-19T12:20:51.467114+00:00",
+  "transaction_cost_bps": 10,
+  "strategy_gross_of_costs": {
+    "total_return": 3.66,
+    "annualized_return": 0.1287,
+    "annualized_vol": 0.1697,
+    "sharpe_ratio": 0.688,
+    "max_drawdown": -0.3278
+  },
+  "risk_free_annual_avg": 0.019,
+  "selection_note": "Config selected by best Sharpe on TRAINING data only (start to 2021-01-01), never on the period it's evaluated over here - a walk-forward split, not a full-sample search. See walk_forward.test_strategy for genuinely out-of-sample performance. Absolute-momentum filter: a sector is only held if its trailing return beats the realised risk-free/cash return over the same window; otherwise that sleeve sits in cash. Net of an assumed 10bps transaction cost per unit of portfolio turnover (see strategy_gross_of_costs for the zero-cost comparison).",
+  "walk_forward": {
+    "train_period": [
+      "2014-01-02",
+      "2021-01-01"
+    ],
+    "test_period": [
+      "2021-01-01",
+      "2026-09-18"
+    ],
+    "test_strategy": {
+      "total_return": 1.2844,
+      "annualized_return": 0.1559,
+      "annualized_vol": 0.1642,
+      "sharpe_ratio": 0.768,
+      "max_drawdown": -0.1738
+    },
+    "test_benchmark_spy": {
+      "total_return": 1.1995,
+      "annualized_return": 0.1482,
+      "annualized_vol": 0.1668,
+      "sharpe_ratio": 0.718,
+      "max_drawdown": -0.245
+    },
+    "test_benchmark_equal_weight": {
+      "total_return": 0.9846,
+      "annualized_return": 0.1277,
+      "annualized_vol": 0.1439,
+      "sharpe_ratio": 0.682,
+      "max_drawdown": -0.1919
+    }
+  },
+  "backtest_start": "2014-01-02",
+  "backtest_end": "2026-09-18"
 }
