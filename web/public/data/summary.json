@@ -27,7 +27,7 @@
     "sharpe_ratio": 0.631,
     "max_drawdown": -0.3634
   },
-  "generated_at": "2026-09-19T18:40:26.515944+00:00",
+  "generated_at": "2026-09-21T12:12:52.625536+00:00",
   "transaction_cost_bps": 10,
   "strategy_gross_of_costs": {
     "total_return": 3.66,
