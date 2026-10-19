@@ -1,38 +1,38 @@
 {
   "period_start": "2014-01-02",
-  "period_end": "2026-10-12",
+  "period_end": "2026-10-16",
   "config": {
     "lookback_months": 12,
     "skip_month": true,
     "top_n": 3
   },
   "strategy": {
-    "total_return": 3.4827,
+    "total_return": 3.4882,
     "annualized_return": 0.1246,
-    "annualized_vol": 0.1693,
+    "annualized_vol": 0.1692,
     "sharpe_ratio": 0.667,
     "max_drawdown": -0.3282
   },
   "benchmark_spy": {
-    "total_return": 4.2618,
-    "annualized_return": 0.1388,
+    "total_return": 4.163,
+    "annualized_return": 0.137,
     "annualized_vol": 0.171,
-    "sharpe_ratio": 0.735,
+    "sharpe_ratio": 0.726,
     "max_drawdown": -0.3372
   },
   "benchmark_equal_weight": {
-    "total_return": 2.8745,
-    "annualized_return": 0.1118,
-    "annualized_vol": 0.157,
-    "sharpe_ratio": 0.634,
+    "total_return": 2.9048,
+    "annualized_return": 0.1124,
+    "annualized_vol": 0.1569,
+    "sharpe_ratio": 0.637,
     "max_drawdown": -0.3634
   },
-  "generated_at": "2026-10-12T14:39:35.793096+00:00",
+  "generated_at": "2026-10-19T12:24:07.104793+00:00",
   "transaction_cost_bps": 10,
   "strategy_gross_of_costs": {
-    "total_return": 3.7962,
+    "total_return": 3.8021,
     "annualized_return": 0.1306,
-    "annualized_vol": 0.1694,
+    "annualized_vol": 0.1693,
     "sharpe_ratio": 0.698,
     "max_drawdown": -0.3278
   },
@@ -41,7 +41,7 @@
     {
       "label": "No-trade band (2pp) - cuts turnover, delays rotation",
       "full_sharpe": 0.645,
-      "oos_sharpe": 0.735,
+      "oos_sharpe": 0.734,
       "full_sharpe_delta": -0.022,
       "oos_sharpe_delta": -0.056
     },
@@ -50,21 +50,21 @@
       "full_sharpe": 0.613,
       "oos_sharpe": 0.643,
       "full_sharpe_delta": -0.054,
-      "oos_sharpe_delta": -0.148
+      "oos_sharpe_delta": -0.147
     },
     {
       "label": "Risk-parity weighting (inverse-vol instead of equal-weight)",
-      "full_sharpe": 0.642,
-      "oos_sharpe": 0.733,
-      "full_sharpe_delta": -0.025,
-      "oos_sharpe_delta": -0.058
+      "full_sharpe": 0.645,
+      "oos_sharpe": 0.74,
+      "full_sharpe_delta": -0.022,
+      "oos_sharpe_delta": -0.05
     },
     {
       "label": "Vol targeting + risk parity combined",
-      "full_sharpe": 0.591,
-      "oos_sharpe": 0.592,
-      "full_sharpe_delta": -0.076,
-      "oos_sharpe_delta": -0.199
+      "full_sharpe": 0.595,
+      "oos_sharpe": 0.602,
+      "full_sharpe_delta": -0.072,
+      "oos_sharpe_delta": -0.188
     }
   ],
   "selection_note": "Config selected by best Sharpe on TRAINING data only (start to 2021-01-01), never on the period it's evaluated over here - a walk-forward split, not a full-sample search. See walk_forward.test_strategy for genuinely out-of-sample performance. Absolute-momentum filter: a sector is only held if its trailing return beats the realised risk-free/cash return over the same window; otherwise that sleeve sits in cash. Net of an assumed 10bps transaction cost per unit of portfolio turnover (see strategy_gross_of_costs for the zero-cost comparison). Four further extensions (no-trade band, vol targeting, leveraged vol targeting, risk-parity weighting) were implemented and evaluated through this same walk-forward split - see extensions_tested: none improved Sharpe, so all are left off by default. Kept in the code as opt-in parameters rather than deleted, since a documented negative result is still a result.",
@@ -75,30 +75,30 @@
     ],
     "test_period": [
       "2021-01-01",
-      "2026-10-12"
+      "2026-10-16"
     ],
     "test_strategy": {
-      "total_return": 1.3512,
+      "total_return": 1.3541,
       "annualized_return": 0.1597,
-      "annualized_vol": 0.1634,
-      "sharpe_ratio": 0.791,
+      "annualized_vol": 0.1632,
+      "sharpe_ratio": 0.79,
       "max_drawdown": -0.1738
     },
     "test_benchmark_spy": {
-      "total_return": 1.2462,
-      "annualized_return": 0.1506,
-      "annualized_vol": 0.1662,
-      "sharpe_ratio": 0.732,
+      "total_return": 1.204,
+      "annualized_return": 0.1465,
+      "annualized_vol": 0.1661,
+      "sharpe_ratio": 0.71,
       "max_drawdown": -0.245
     },
     "test_benchmark_equal_weight": {
-      "total_return": 1.0085,
-      "annualized_return": 0.1285,
-      "annualized_vol": 0.1434,
-      "sharpe_ratio": 0.689,
+      "total_return": 1.0242,
+      "annualized_return": 0.1298,
+      "annualized_vol": 0.1432,
+      "sharpe_ratio": 0.696,
       "max_drawdown": -0.1919
     }
   },
   "backtest_start": "2014-01-02",
-  "backtest_end": "2026-10-12"
+  "backtest_end": "2026-10-16"
 }

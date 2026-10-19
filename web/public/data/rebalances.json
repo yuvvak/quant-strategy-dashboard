@@ -3677,7 +3677,7 @@
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.332,
+        "momentum": 0.3319,
         "weight": 0.3333
       },
       {
@@ -3720,24 +3720,24 @@
     "cost_charged": 0.0
   },
   {
-    "date": "2026-10-12",
+    "date": "2026-10-16",
     "selected": [
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.5076,
+        "momentum": 0.4812,
         "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3967,
+        "momentum": 0.3882,
         "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.2251,
+        "momentum": 0.2544,
         "weight": 0.3333
       }
     ],
