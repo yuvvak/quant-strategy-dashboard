@@ -3720,29 +3720,56 @@
     "cost_charged": 0.0
   },
   {
-    "date": "2026-10-23",
+    "date": "2026-10-30",
     "selected": [
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.4439,
+        "momentum": 0.4436,
         "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.3968,
+        "momentum": 0.4108,
         "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.2612,
+        "momentum": 0.2142,
         "weight": 0.3333
       }
     ],
     "cash_weight": 0.0,
     "cash_hurdle": 0.0374,
+    "turnover": 0.0,
+    "cost_charged": 0.0
+  },
+  {
+    "date": "2026-11-02",
+    "selected": [
+      {
+        "ticker": "XLE",
+        "sector": "Energy",
+        "momentum": 0.4464,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLK",
+        "sector": "Technology",
+        "momentum": 0.4112,
+        "weight": 0.3333
+      },
+      {
+        "ticker": "XLV",
+        "sector": "Health Care",
+        "momentum": 0.1776,
+        "weight": 0.3333
+      }
+    ],
+    "cash_weight": 0.0,
+    "cash_hurdle": 0.0375,
     "turnover": 0.0,
     "cost_charged": 0.0
   }
