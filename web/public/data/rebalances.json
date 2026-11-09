@@ -3747,24 +3747,24 @@
     "cost_charged": 0.0
   },
   {
-    "date": "2026-11-02",
+    "date": "2026-11-09",
     "selected": [
       {
         "ticker": "XLE",
         "sector": "Energy",
-        "momentum": 0.4464,
+        "momentum": 0.5047,
         "weight": 0.3333
       },
       {
         "ticker": "XLK",
         "sector": "Technology",
-        "momentum": 0.4112,
+        "momentum": 0.3747,
         "weight": 0.3333
       },
       {
         "ticker": "XLV",
         "sector": "Health Care",
-        "momentum": 0.1776,
+        "momentum": 0.2017,
         "weight": 0.3333
       }
     ],

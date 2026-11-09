@@ -1,70 +1,70 @@
 {
   "period_start": "2014-01-02",
-  "period_end": "2026-11-02",
+  "period_end": "2026-11-09",
   "config": {
     "lookback_months": 12,
     "skip_month": true,
     "top_n": 3
   },
   "strategy": {
-    "total_return": 3.5209,
-    "annualized_return": 0.1248,
-    "annualized_vol": 0.1691,
-    "sharpe_ratio": 0.668,
+    "total_return": 3.3134,
+    "annualized_return": 0.1205,
+    "annualized_vol": 0.1696,
+    "sharpe_ratio": 0.643,
     "max_drawdown": -0.3282
   },
   "benchmark_spy": {
-    "total_return": 4.1418,
-    "annualized_return": 0.1361,
-    "annualized_vol": 0.1708,
-    "sharpe_ratio": 0.721,
+    "total_return": 4.0683,
+    "annualized_return": 0.1346,
+    "annualized_vol": 0.1713,
+    "sharpe_ratio": 0.712,
     "max_drawdown": -0.3372
   },
   "benchmark_equal_weight": {
-    "total_return": 2.9658,
-    "annualized_return": 0.1133,
-    "annualized_vol": 0.1567,
-    "sharpe_ratio": 0.642,
+    "total_return": 2.9479,
+    "annualized_return": 0.1128,
+    "annualized_vol": 0.1569,
+    "sharpe_ratio": 0.638,
     "max_drawdown": -0.3634
   },
-  "generated_at": "2026-11-02T14:57:48.214684+00:00",
+  "generated_at": "2026-11-09T15:27:07.958421+00:00",
   "transaction_cost_bps": 10,
   "strategy_gross_of_costs": {
-    "total_return": 3.8371,
-    "annualized_return": 0.1307,
-    "annualized_vol": 0.1691,
-    "sharpe_ratio": 0.699,
+    "total_return": 3.6151,
+    "annualized_return": 0.1264,
+    "annualized_vol": 0.1696,
+    "sharpe_ratio": 0.674,
     "max_drawdown": -0.3278
   },
   "risk_free_annual_avg": 0.0193,
   "extensions_tested": [
     {
       "label": "No-trade band (2pp) - cuts turnover, delays rotation",
-      "full_sharpe": 0.646,
-      "oos_sharpe": 0.737,
-      "full_sharpe_delta": -0.022,
-      "oos_sharpe_delta": -0.055
+      "full_sharpe": 0.622,
+      "oos_sharpe": 0.68,
+      "full_sharpe_delta": -0.021,
+      "oos_sharpe_delta": -0.056
     },
     {
       "label": "Volatility targeting (up to 1.5x, financing cost modelled)",
-      "full_sharpe": 0.614,
-      "oos_sharpe": 0.647,
-      "full_sharpe_delta": -0.054,
-      "oos_sharpe_delta": -0.145
+      "full_sharpe": 0.576,
+      "oos_sharpe": 0.566,
+      "full_sharpe_delta": -0.067,
+      "oos_sharpe_delta": -0.17
     },
     {
       "label": "Risk-parity weighting (inverse-vol instead of equal-weight)",
-      "full_sharpe": 0.648,
-      "oos_sharpe": 0.748,
-      "full_sharpe_delta": -0.02,
-      "oos_sharpe_delta": -0.044
+      "full_sharpe": 0.626,
+      "oos_sharpe": 0.695,
+      "full_sharpe_delta": -0.017,
+      "oos_sharpe_delta": -0.041
     },
     {
       "label": "Vol targeting + risk parity combined",
-      "full_sharpe": 0.601,
-      "oos_sharpe": 0.613,
-      "full_sharpe_delta": -0.067,
-      "oos_sharpe_delta": -0.179
+      "full_sharpe": 0.567,
+      "oos_sharpe": 0.542,
+      "full_sharpe_delta": -0.076,
+      "oos_sharpe_delta": -0.194
     }
   ],
   "selection_note": "Config selected by best Sharpe on TRAINING data only (start to 2021-01-01), never on the period it's evaluated over here - a walk-forward split, not a full-sample search. See walk_forward.test_strategy for genuinely out-of-sample performance. Absolute-momentum filter: a sector is only held if its trailing return beats the realised risk-free/cash return over the same window; otherwise that sleeve sits in cash. Net of an assumed 10bps transaction cost per unit of portfolio turnover (see strategy_gross_of_costs for the zero-cost comparison). Four further extensions (no-trade band, vol targeting, leveraged vol targeting, risk-parity weighting) were implemented and evaluated through this same walk-forward split - see extensions_tested: none improved Sharpe, so all are left off by default. Kept in the code as opt-in parameters rather than deleted, since a documented negative result is still a result.",
@@ -75,30 +75,30 @@
     ],
     "test_period": [
       "2021-01-01",
-      "2026-11-02"
+      "2026-11-09"
     ],
     "test_strategy": {
-      "total_return": 1.3712,
-      "annualized_return": 0.1597,
-      "annualized_vol": 0.1628,
-      "sharpe_ratio": 0.792,
+      "total_return": 1.2624,
+      "annualized_return": 0.1499,
+      "annualized_vol": 0.164,
+      "sharpe_ratio": 0.736,
       "max_drawdown": -0.1738
     },
     "test_benchmark_spy": {
-      "total_return": 1.195,
-      "annualized_return": 0.1445,
-      "annualized_vol": 0.1658,
-      "sharpe_ratio": 0.7,
+      "total_return": 1.1636,
+      "annualized_return": 0.1411,
+      "annualized_vol": 0.1669,
+      "sharpe_ratio": 0.679,
       "max_drawdown": -0.245
     },
     "test_benchmark_equal_weight": {
-      "total_return": 1.0558,
-      "annualized_return": 0.1317,
-      "annualized_vol": 0.1428,
-      "sharpe_ratio": 0.71,
+      "total_return": 1.0465,
+      "annualized_return": 0.1303,
+      "annualized_vol": 0.1434,
+      "sharpe_ratio": 0.699,
       "max_drawdown": -0.1919
     }
   },
   "backtest_start": "2014-01-02",
-  "backtest_end": "2026-11-02"
+  "backtest_end": "2026-11-09"
 }
